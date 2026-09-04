@@ -1,0 +1,12 @@
+{
+  // Static-assets-only Cloudflare Workers deployment for the public
+  // site — same pattern as the admin dashboard project. This should
+  // be deployed as a SEPARATE Cloudflare Pages/Workers project from
+  // the admin dashboard (different domain/audience), not merged into it.
+  "name": "skautotruck-public-site",
+  "compatibility_date": "2024-09-23",
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "single-page-application"
+  }
+}
